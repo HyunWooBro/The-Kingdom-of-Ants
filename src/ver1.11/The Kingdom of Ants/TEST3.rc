@@ -1,0 +1,713 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DOM_WORKER DIALOGEX 0, 0, 236, 113
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "내정 - 일꾼"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "결정",IDOK,178,7,50,14
+    PUSHBUTTON      "취소",IDCANCEL,178,23,50,14
+    LTEXT           "일꾼 개미들의 작업을 배분하십시오.변경 후 3일동안은 조작할 수 없습니다.",IDC_STATIC_DOM,24,4,100,24
+    CONTROL         "",IDC_DOM_SLIDER1,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | TBS_TOOLTIPS | WS_TABSTOP,55,32,88,15
+    CONTROL         "",IDC_DOM_SLIDER2,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | TBS_TOOLTIPS | WS_TABSTOP,55,52,88,15
+    CONTROL         "",IDC_DOM_SLIDER3,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | TBS_TOOLTIPS | WS_DISABLED | WS_TABSTOP,55,70,88,15
+    CONTROL         "",IDC_DOM_SLIDER4,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | TBS_TOOLTIPS | WS_DISABLED | WS_TABSTOP,55,88,88,15
+    CONTROL         "고정",IDC_DOM_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,146,33,27,12
+    CONTROL         "고정",IDC_DOM_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,146,52,27,12
+    CONTROL         "고정",IDC_DOM_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,146,70,27,12
+    CONTROL         "고정",IDC_DOM_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,146,89,27,12
+    EDITTEXT        IDC_DOM_EDIT1,183,77,41,17,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "변경 허용치",IDC_STATIC,182,61,44,13
+    LTEXT           "건설",IDC_STATIC,22,56,22,15
+    LTEXT           "버섯재배",IDC_WORKER_MUSHROOM,15,74,33,10,WS_DISABLED
+    LTEXT           "진딧물 사육",IDC_WORKER_APHID,10,92,44,9,WS_DISABLED
+    LTEXT           "수색",IDC_STATIC,22,36,17,8
+END
+
+IDD_NORMAL DIALOGEX 8, 34, 127, 110
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Dialog"
+FONT 8, "Microsoft Sans Serif", 700, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "확인",IDOK,70,89,50,14
+    LTEXT           "script",IDC_NORMAL,7,7,113,79
+END
+
+IDD_DOM_QUEEN DIALOGEX 0, 0, 219, 108
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "내정 - 여왕"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "결정",IDOK,162,7,50,14
+    PUSHBUTTON      "취소",IDCANCEL,162,23,50,14
+    LTEXT           "여왕 개미의 알을 배분하십시오.변경 후 5일동안은 조작할 수 없습니다.",IDC_STATIC_DOM,19,7,100,24
+    CONTROL         "",IDC_DOM_SLIDER1,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,61,46,88,16
+    LTEXT           "일꾼개미 알",IDC_STATIC,14,43,43,8
+    EDITTEXT        IDC_DOM_EDIT1,89,85,41,17,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "변경 허용치",IDC_STATIC,89,70,44,11
+    LTEXT           "병정개미 알",IDC_STATIC,155,43,46,15
+    EDITTEXT        IDC_DOM_EDIT2,13,56,44,16,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_DOM_EDIT3,155,56,44,16,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_BUILDING_BOOK DIALOGEX 230, 34, 168, 182
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "책"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "다음 페이지",IDNEXT,111,7,50,14
+    PUSHBUTTON      "그만 읽기",IDCANCEL,111,40,50,14
+    LTEXT           "content",IDC_STATIC_BOOK,5,6,102,169
+    PUSHBUTTON      "이전 페이지",IDPREVIEW,111,24,50,14
+END
+
+IDD_DOM_SOLDIER DIALOGEX 0, 0, 208, 113
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "내정 - 병정"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "결정",IDOK,150,7,50,14
+    PUSHBUTTON      "취소",IDCANCEL,150,22,50,14
+    LTEXT           "병정 개미들의 작업을 배분하십시오.변경 후 3일동안은 조작할 수 없습니다.",IDC_STATIC_DOM,17,7,100,24
+    CONTROL         "",IDC_DOM_SLIDER1,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,57,45,88,16
+    LTEXT           "전투 태세",IDC_STATIC,152,43,46,11
+    LTEXT           "사냥",IDC_STATIC,25,44,17,8
+    EDITTEXT        IDC_DOM_EDIT1,81,85,41,17,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "변경 허용치",IDC_STATIC,79,69,44,13
+    EDITTEXT        IDC_DOM_EDIT2,11,57,44,16,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_DOM_EDIT3,148,57,44,16,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_BUILDING_UNDER_CONSTRUCTION DIALOGEX 0, 0, 204, 121
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "건설"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "공사시작",IDOK,147,7,50,14
+    PUSHBUTTON      "취소",IDCANCEL,148,24,50,14
+    LTEXT           "discribtion",IDC_STATIC_BUILDING,4,4,140,64
+    LTEXT           "cost",IDC_STATIC_COST,8,76,136,17
+    LTEXT           "expected time",IDC_STATIC_PERIOD,8,100,136,16
+END
+
+IDD_BUILDING_LAB DIALOGEX 8, 34, 186, 249
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "연구시작",IDOK,129,7,50,14
+    PUSHBUTTON      "나가기",IDCANCEL,129,23,50,14
+    LTEXT           "화학 연구소\n\n무엇을 연구하고 싶으십니까?",IDC_STATIC,12,9,113,26
+    CONTROL         "고농축 개미산",IDC_LIB_RADIO1,"Button",BS_AUTORADIOBUTTON,17,42,86,11
+    CONTROL         "영양 교환의 개선",IDC_LIB_RADIO2,"Button",BS_AUTORADIOBUTTON,17,57,86,11
+    CONTROL         "건설의 혁신",IDC_LIB_RADIO3,"Button",BS_AUTORADIOBUTTON,17,72,86,11
+    CONTROL         "언어 - 민달팽이",IDC_LIB_RADIO4,"Button",BS_AUTORADIOBUTTON,17,88,86,11
+    CONTROL         "언어 - 꿀벌",IDC_LIB_RADIO5,"Button",BS_AUTORADIOBUTTON,17,104,86,11
+    CONTROL         "융통성",IDC_LIB_RADIO7,"Button",BS_AUTORADIOBUTTON,17,136,86,11
+    CONTROL         "적응력",IDC_LIB_RADIO8,"Button",BS_AUTORADIOBUTTON,17,152,86,11
+    CONTROL         "광산의 개발",IDC_LIB_RADIO9,"Button",BS_AUTORADIOBUTTON,17,168,86,11
+    CONTROL         "불을 이용한 방어법",IDC_LIB_RADIO10,"Button",BS_AUTORADIOBUTTON,17,183,86,11
+    CONTROL         "언어 - 메뚜기",IDC_LIB_RADIO6,"Button",BS_AUTORADIOBUTTON,17,120,86,11
+    PUSHBUTTON      "자세히",IDC_LIB_BUTTON1,115,41,49,13
+    CONTROL         "긍정적 사고",IDC_LIB_RADIO11,"Button",BS_AUTORADIOBUTTON,17,199,86,11
+    CONTROL         "언어 - 장수풍뎅이",IDC_LIB_RADIO12,"Button",BS_AUTORADIOBUTTON,17,214,86,11
+    CONTROL         "언어 - 사슴벌레",IDC_LIB_RADIO13,"Button",BS_AUTORADIOBUTTON,17,230,86,11
+    PUSHBUTTON      "자세히",IDC_LIB_BUTTON2,115,56,49,13
+    PUSHBUTTON      "자세히",IDC_LIB_BUTTON3,115,71,49,13
+    PUSHBUTTON      "자세히",IDC_LIB_BUTTON4,115,87,49,13
+    PUSHBUTTON      "자세히",IDC_LIB_BUTTON5,115,103,49,13
+    PUSHBUTTON      "자세히",IDC_LIB_BUTTON6,115,118,49,13
+    PUSHBUTTON      "자세히",IDC_LIB_BUTTON7,115,135,49,13
+    PUSHBUTTON      "자세히",IDC_LIB_BUTTON8,115,151,49,13
+    PUSHBUTTON      "자세히",IDC_LIB_BUTTON9,115,167,49,13
+    PUSHBUTTON      "자세히",IDC_LIB_BUTTON10,115,183,49,13
+    PUSHBUTTON      "자세히",IDC_LIB_BUTTON11,115,198,49,13
+    PUSHBUTTON      "자세히",IDC_LIB_BUTTON12,115,214,49,13
+    PUSHBUTTON      "자세히",IDC_LIB_BUTTON13,115,229,49,13
+END
+
+IDD_BUILDING_LIBARAY DIALOGEX 8, 34, 213, 233
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "나가기",IDCANCEL,156,7,50,14
+    LTEXT           "도서관\n\n이곳에는 많은 개미들의 지혜와 역사가 담긴 곳입니다. 활성화 되어 있지 않은 책들은 예약한 상태라 나중에 보실 수 있습니다. 이용은 자유로우나 책의 반납은 지켜주세요.",IDC_STATIC,10,9,142,59
+    LTEXT           "'상대적이고 절대적인 지식의 \n백과사전'",IDC_STATIC,12,72,111,17
+    LTEXT           "'꼭 읽어야 하는 왕국 매뉴얼'",IDC_STATIC,12,91,111,11
+    LTEXT           "'개미 연방'",IDC_STATIC,12,106,111,11
+    LTEXT           "'진기한 물건들의 행방'",IDC_STATIC,12,122,111,11
+    LTEXT           "'전쟁의 미학'",IDC_STATIC,12,137,111,11
+    LTEXT           "'상대적이고 절대적인 지식의 \n백과사전2'",IDC_STATIC,12,151,116,17
+    LTEXT           "'개미 사회에 대한 고찰'",IDC_STATIC,12,172,116,11
+    PUSHBUTTON      "읽기",IDC_LAB_BUTTON1,134,73,44,13
+    PUSHBUTTON      "읽기",IDC_LAB_BUTTON2,134,89,44,13
+    PUSHBUTTON      "읽기",IDC_LAB_BUTTON3,134,105,44,13,WS_DISABLED
+    PUSHBUTTON      "읽기",IDC_LAB_BUTTON4,134,121,44,13,WS_DISABLED
+    PUSHBUTTON      "읽기",IDC_LAB_BUTTON5,134,137,44,13,WS_DISABLED
+    PUSHBUTTON      "읽기",IDC_LAB_BUTTON6,134,154,44,13,WS_DISABLED
+    PUSHBUTTON      "읽기",IDC_LAB_BUTTON7,134,171,44,13,WS_DISABLED
+    LTEXT           "'상대적이고 절대적인 지식의 \n백과사전3'",IDC_STATIC,12,185,116,16
+    LTEXT           "'너희가 예술을 아느냐'",IDC_STATIC,12,205,116,11
+    PUSHBUTTON      "읽기",IDC_LAB_BUTTON8,134,187,44,13,WS_DISABLED
+    PUSHBUTTON      "읽기",IDC_LAB_BUTTON9,134,204,44,13,WS_DISABLED
+END
+
+IDD_DIP_SUPPORT DIALOGEX 0, 0, 212, 124
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "외교 - 증정"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "결정",IDOK,155,7,50,14
+    PUSHBUTTON      "취소",IDCANCEL,155,24,50,14
+    CONTROL         "",IDC_DIP_SLIDER1,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | TBS_TOOLTIPS | WS_TABSTOP,60,55,88,16
+    CONTROL         "",IDC_DIP_SLIDER2,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | TBS_TOOLTIPS | WS_TABSTOP,60,75,88,16
+    CONTROL         "",IDC_DIP_SLIDER3,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | TBS_TOOLTIPS | WS_TABSTOP,60,95,88,16
+    LTEXT           "식량",IDC_STATIC,29,59,22,11
+    LTEXT           "목재",IDC_STATIC,30,78,22,11
+    LTEXT           "광석",IDC_STATIC,30,97,20,11
+    LTEXT           "선택된 종족에게 자원을 증정합니다. 그들과의 관계를 개선시킬 수 있습니다. 아래의 슬라이더를 오른쪽으로 움직여 자원을 줄 수 있습니다.",IDC_STATIC,12,8,124,41
+END
+
+IDD_DIP_ATTACK DIALOGEX 0, 0, 207, 135
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "외교 - 공격"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "결정",IDOK,150,7,50,14
+    PUSHBUTTON      "취소",IDCANCEL,150,24,50,14
+    CONTROL         "",IDC_DIP_SLIDER1,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,60,70,88,16
+    LTEXT           "선택된 종족을 공격합니다.  공격은 한번에 한 종족에게만 가능합니다. 전투태세인 병정개미만 전투에 참가할 수 있습니다. 용병이 있을 경우 병정개미와 같은 비율로 전투에 참가합니다.  슬라이더를 오른쪽으로 움직여 출전하고 싶은 비율을 정하십시오.",IDC_STATIC,12,8,134,56
+    LTEXT           "주둔병",IDC_STATIC,23,74,27,10
+    LTEXT           "출전병",IDC_STATIC,160,73,34,9
+    EDITTEXT        IDC_DIP_EDIT1,13,88,44,16,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_DIP_EDIT2,151,88,44,16,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_DIP_EDIT3,13,107,44,16,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_DIP_EDIT4,151,107,44,16,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "병정 개미",IDC_STATIC,88,92,43,12
+    LTEXT           "용병",IDC_STATIC,96,110,37,12
+END
+
+IDD_BUILDING_EXP DIALOGEX 230, 34, 153, 180
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "연구과제"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "확인",IDOK,96,159,50,14
+    LTEXT           "discribtion",IDC_STATIC_EXP,8,8,132,96
+    LTEXT           "cost",IDC_STATIC_COST,8,112,128,19
+    LTEXT           "expected time",IDC_STATIC_PERIOD,8,138,128,16
+END
+
+IDD_DIP_PROPAGATION DIALOGEX 0, 0, 216, 116
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "외교 - 포교"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "결정",IDOK,159,7,50,14
+    PUSHBUTTON      "취소",IDCANCEL,159,24,50,14
+    LTEXT           "선택된 종족에게 종교를 전파합니다. 성공한다면 같은 종교를 믿음으로 인해 해당 종족과의 관계가 소량 개선되며, 그 종족은 종교갈등으로 인한 불만으로 세력에 타격을 받게 됩니다. 실패한다면 그 종족과의 관계가 악화됩니다. 중립 이하의 관계라면 성공할 가능성이 낮아집니다. 교화가 진행하면 진행될수록 포교의 효과는 낮아집니다.\n\n필요 자원\n식량 : 20",IDC_STATIC,10,7,136,104
+END
+
+IDD_BATTLE_DEFENCE DIALOGEX 0, 0, 170, 113
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "방어 전략"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "결정",IDOK,113,92,50,14
+    LTEXT           "참모 개미\n\n"" '불개미'종이 우리 왕국을 공격해오고 있습니다. 어떤 방어 전략을 사용하시겠습니까?""",IDC_STATIC_BATTLE,13,8,145,41
+    CONTROL         "농성을 하며 수비적으로 막아낸다.",IDC_BATTLE_RADIO1,"Button",BS_AUTORADIOBUTTON,13,54,147,17
+    CONTROL         "요격을 하여 적들을 물리친다.",IDC_BATTLE_RADIO2,"Button",BS_AUTORADIOBUTTON,13,72,147,17
+END
+
+IDD_BATTLE_ATTACK DIALOGEX 0, 0, 160, 121
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "공격 전략"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "결정",IDOK,103,100,50,14
+    LTEXT           "참모 개미\n\n"" '불개미'종을 공격하려 합니다. 어떤 공격 전략을 사용하시겠습니까?""",IDC_STATIC_BATTLE,13,9,128,37
+    CONTROL         "자원을 약탈한다.",IDC_BATTLE_RADIO1,"Button",BS_AUTORADIOBUTTON,16,46,99,16
+    CONTROL         "일반적인 공격을 한다.",IDC_BATTLE_RADIO2,"Button",BS_AUTORADIOBUTTON,16,63,99,16
+    CONTROL         "정복한다.",IDC_BATTLE_RADIO3,"Button",BS_AUTORADIOBUTTON,16,80,99,16
+END
+
+IDD_BUILDING_LAB_INIT DIALOGEX 8, 34, 186, 172
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "연구시작",IDOK,129,7,50,14
+    PUSHBUTTON      "나가기",IDCANCEL,129,23,50,14
+    LTEXT           "화학 연구소\n\n무엇을 연구하고 싶으십니까?",IDC_STATIC,12,9,113,26
+    CONTROL         "고농축 개미산",IDC_LIB_RADIO1,"Button",BS_AUTORADIOBUTTON,17,42,86,11
+    CONTROL         "영양 교환의 개선",IDC_LIB_RADIO2,"Button",BS_AUTORADIOBUTTON,17,57,86,11
+    CONTROL         "건설의 혁신",IDC_LIB_RADIO3,"Button",BS_AUTORADIOBUTTON,17,72,86,11
+    CONTROL         "언어 - 민달팽이",IDC_LIB_RADIO4,"Button",BS_AUTORADIOBUTTON,17,88,86,11
+    CONTROL         "언어 - 꿀벌",IDC_LIB_RADIO5,"Button",BS_AUTORADIOBUTTON,17,104,86,11
+    CONTROL         "융통성",IDC_LIB_RADIO7,"Button",BS_AUTORADIOBUTTON,17,136,86,11
+    CONTROL         "적응력",IDC_LIB_RADIO8,"Button",BS_AUTORADIOBUTTON,17,152,86,11
+    CONTROL         "언어 - 메뚜기",IDC_LIB_RADIO6,"Button",BS_AUTORADIOBUTTON,17,120,86,11
+    PUSHBUTTON      "자세히",IDC_LIB_BUTTON1,115,41,49,13
+    PUSHBUTTON      "자세히",IDC_LIB_BUTTON2,115,56,49,13
+    PUSHBUTTON      "자세히",IDC_LIB_BUTTON3,115,71,49,13
+    PUSHBUTTON      "자세히",IDC_LIB_BUTTON4,115,87,49,13
+    PUSHBUTTON      "자세히",IDC_LIB_BUTTON5,115,103,49,13
+    PUSHBUTTON      "자세히",IDC_LIB_BUTTON6,115,118,49,13
+    PUSHBUTTON      "자세히",IDC_LIB_BUTTON7,115,135,49,13
+    PUSHBUTTON      "자세히",IDC_LIB_BUTTON8,115,151,49,13
+END
+
+IDD_BUILDING_HIRED DIALOGEX 8, 34, 158, 102
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "결정",IDOK,101,7,50,14
+    PUSHBUTTON      "나가기",IDCANCEL,101,24,50,14
+    LTEXT           "Static",IDC_STATIC_HIRED,6,7,90,69
+    CONTROL         "용병의 모집을 중지합니다.",IDC_HIRED_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,80,112,15
+END
+
+IDD_STORY_APHID DIALOGEX 8, 34, 165, 140
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "결정",IDOK,108,119,50,14
+    CONTROL         "메뚜기를 물리치고 진딧물을 구한다.",IDC_STORY_RADIO2,"Button",BS_AUTORADIOBUTTON,14,103,142,12
+    CONTROL         "영지내에서 떠날 때까지 무시한다.",IDC_STORY_RADIO1,"Button",BS_AUTORADIOBUTTON,14,88,134,12
+    LTEXT           "참모 개미\n\n""우리의 영지내에서 '메뚜기'들이 소수의 '진딧물'들을 공격하는 모습이 포착되었습니다. '진딧물'은 우리에게 이로운 종이기는 하나 그들에게 도움의 손길을 주면 '메뚜기'와 우리의 관계가 크게 악화될 것이 두렵습니다. 더불어 전투에 의한 피해도 예상됩니다.""",IDC_STATIC,12,11,140,72
+END
+
+IDD_EVENT_SELLER DIALOGEX 8, 34, 185, 137
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "구매",IDOK,128,7,50,14
+    PUSHBUTTON      "거절",IDCANCEL,128,24,50,14
+    LTEXT           "상인 무당벌레\n\n""저는 아이템을 취급하는 무당벌레입니다.  진기한 보물부터 신기한 잡동사니까지 없는게 없지요. 이 아이템은 어떻습니까?""",IDC_STATIC,8,8,116,52
+    LTEXT           "item",IDC_STATIC_ITEM,8,68,156,32
+    LTEXT           "item cost",IDC_STATIC_ITEM_COST,8,108,156,22
+END
+
+IDD_EVENT_FIGHT DIALOGEX 8, 34, 163, 148
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "결정",IDOK,106,127,50,14
+    LTEXT           "참모 개미\n\n""영지 근처에서 '메뚜기'종과 '불개미'종 사이의 전투가 벌어지고 있습니다.",IDC_STATIC_FIGHT,12,10,143,34
+    CONTROL         "무시한다.",IDC_EVE_RADIO1,"Button",BS_AUTORADIOBUTTON,15,79,110,11
+    CONTROL         "'불개미'종을 돕는다.",IDC_EVE_RADIO2,"Button",BS_AUTORADIOBUTTON,15,94,110,11
+    CONTROL         "'메뚜기'종을 돕는다.",IDC_EVE_RADIO3,"Button",BS_AUTORADIOBUTTON,16,110,110,11
+    LTEXT           "만약 한쪽을 돕는다면 그 종족과의 관계가 개선될 것이며 반대 종족과는 악화될 것은 자명합니다.  어떻게 대처하시겠습니까?""",IDC_STATIC,12,42,143,33
+END
+
+IDD_ADVISER DIALOGEX 8, 34, 204, 164
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "질문",IDOK,147,7,50,14
+    PUSHBUTTON      "취소",IDCANCEL,147,24,50,14
+    LTEXT           "참모 개미\n\n""여왕이시어, 진정한 주군은 애정을 갖고 왕국을 관찰하며 충실한 개미들을 옆에 두어 국사를 함께 하는 자라 했습니다. 여왕폐하는 혼자가 아니십니다. 궁금한 것이 있으시면 물어보십시오.""",IDC_STATIC,12,10,124,66
+    CONTROL         """개미들에게 부여할 작업에 대해 알려주게""",IDC_ADVISER_RADIO1,"Button",BS_AUTORADIOBUTTON,12,78,172,14
+    CONTROL         """기타 숙지해야 할 것이 있는가?""",IDC_ADVISER_RADIO4,"Button",BS_AUTORADIOBUTTON,12,125,156,14
+    CONTROL         """지금 무엇을 했으면 좋겠나?""",IDC_ADVISER_RADIO5,"Button",BS_AUTORADIOBUTTON,12,141,147,14
+    CONTROL         """작업의 분배에 관해 알려주게""",IDC_ADVISER_RADIO2,"Button",BS_AUTORADIOBUTTON,12,93,157,14
+    CONTROL         """전쟁에 관해 알려주게""",IDC_ADVISER_RADIO3,"Button",BS_AUTORADIOBUTTON,12,109,148,14
+END
+
+IDD_NANNY DIALOGEX 8, 34, 179, 129
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "질문",IDOK,122,7,50,14
+    PUSHBUTTON      "취소",IDCANCEL,122,24,50,14
+    LTEXT           "유모 개미\n\n""어린 애벌레들이 정말 귀엽지 않나요? 이들이 어서 자라 왕국의 훌륭한 일꾼이 되는 것이 저의 소망입니다. 아.. 제가 잠시 감상에 젖었네요. 무엇이 궁금하십니까?""",IDC_STATIC,10,10,110,66
+    CONTROL         """알의 분배에 관해 알려주게""",IDC_NANNY_RADIO1,"Button",BS_AUTORADIOBUTTON,12,85,144,12
+    CONTROL         """내가 낳을 수 있는 알에 대해 알려주게""",IDC_NANNY_RADIO2,"Button",BS_AUTORADIOBUTTON,12,101,151,12
+END
+
+IDD_BATTLE_RESULT DIALOGEX 8, 34, 149, 166
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "전투 결과"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "확인",IDOK,92,145,50,14
+    LTEXT           "지역 : 암개미 1호의 왕국",IDC_STATIC_PLACE,14,9,121,12
+    LTEXT           "아군 피해 : 사망 30",IDC_STATIC_PLAYER_DEM,14,60,121,12
+    LTEXT           "약탈한 자원\n\n식량 : 33\n목재 : 33\n광석 : 33",IDC_STATIC_RESOURCE,14,97,121,44
+    LTEXT           "적군 피해 : 사망 20",IDC_STATIC_SPE_DEM,14,75,121,12
+    LTEXT           "공격 전략 : 요격",IDC_STATIC_STR_ATT,14,26,121,12
+    LTEXT           "방어 전략 : 농성",IDC_STATIC_STR_DEF,14,40,121,12
+END
+
+IDD_GAMEOVER DIALOGEX 0, 0, 170, 106
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "메뉴로",IDOK,113,85,50,14
+    LTEXT           "Static",IDC_STATIC_GAMEOVER,13,14,143,62
+END
+
+IDD_MAKER DIALOGEX 0, 0, 150, 150
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "제작자"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "확인",IDOK,93,129,50,14
+    LTEXT           "- Title\n             The Kingdom of Ants\n\n- 기획\n\n  김현우\n\n- 그래픽\n\n  이명섭   김현우\n\n- 프로그래밍\n\n  김현우",IDC_STATIC,14,12,122,116
+END
+
+IDD_OPTION DIALOGEX 0, 0, 155, 118
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "옵션"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "나가기",IDCANCEL,98,97,50,14
+    EDITTEXT        IDC_OPT_EDIT1,15,27,89,18,ES_AUTOHSCROLL | ES_WANTRETURN
+    LTEXT           "치트키",IDC_STATIC,17,11,33,13
+    LTEXT           "",IDC_STATIC_OPT,21,56,111,26
+    DEFPUSHBUTTON   "입력",IDOK,110,26,37,16
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DOM_WORKER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 229
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 106
+    END
+
+    IDD_NORMAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 120
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_DOM_QUEEN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 212
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 101
+    END
+
+    IDD_BUILDING_BOOK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 161
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_DOM_SOLDIER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 200
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 106
+    END
+
+    IDD_BUILDING_UNDER_CONSTRUCTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 197
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 114
+    END
+
+    IDD_BUILDING_LAB, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 242
+    END
+
+    IDD_BUILDING_LIBARAY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 206
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 226
+    END
+
+    IDD_DIP_SUPPORT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 205
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 117
+    END
+
+    IDD_DIP_ATTACK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 200
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 128
+    END
+
+    IDD_BUILDING_EXP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 146
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+
+    IDD_DIP_PROPAGATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 209
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 109
+    END
+
+    IDD_BATTLE_DEFENCE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 106
+    END
+
+    IDD_BATTLE_ATTACK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 153
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 114
+    END
+
+    IDD_BUILDING_LAB_INIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 165
+    END
+
+    IDD_BUILDING_HIRED, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 95
+    END
+
+    IDD_STORY_APHID, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 158
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 133
+    END
+
+    IDD_EVENT_SELLER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 178
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_EVENT_FIGHT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 156
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 141
+    END
+
+    IDD_ADVISER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 197
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 157
+    END
+
+    IDD_NANNY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 172
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 122
+    END
+
+    IDD_BATTLE_RESULT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 142
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 159
+    END
+
+    IDD_GAMEOVER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_MAKER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 143
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+
+    IDD_OPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 148
+        VERTGUIDE, 50
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 111
+        HORZGUIDE, 24
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+CURSOR_CROSSHAIR        CURSOR                  "crosshair.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,11,0,0
+ PRODUCTVERSION 1,11,0,0
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x0L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204b0"
+        BEGIN
+            VALUE "CompanyName", "김현우"
+            VALUE "FileDescription", "The Kingdom of Ants.exe"
+            VALUE "FileVersion", "1, 11, 0, 0"
+            VALUE "InternalName", "The Kindom of Ants"
+            VALUE "LegalCopyright", "Copyright (C) 2008"
+            VALUE "OriginalFilename", "The Kingdom of Ants"
+            VALUE "ProductName", "The Kingdom of Ants"
+            VALUE "ProductVersion", "1, 11, 0, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
